@@ -230,6 +230,6 @@ public class BitInputStream extends FilterInputStream {
 		if (bitNumber < 0 || bitNumber > 8) {
 			throw new IllegalArgumentException();
 		}
-		return (byte) Math.pow(2, bitNumber);
+		return (byte) (1 << bitNumber);
 	}
 }
